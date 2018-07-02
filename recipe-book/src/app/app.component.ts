@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  selectedNav = 'recipes';
+  navSelection(location: string) {
+   this.selectedNav = location;
+  }
 }
